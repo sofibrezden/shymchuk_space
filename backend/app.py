@@ -1,7 +1,7 @@
 from flask import Flask
 from config import Config
 from models import db, News, Admin as AdminModel, Product
-from admin_views import SecureModelView, SecureAdminIndexView, AdminReadOnlyView
+from admin_views import SecureModelView, SecureAdminIndexView, AdminModelView
 from flask_admin import Admin
 from flask_login import LoginManager
 from flask_jwt_extended import JWTManager
@@ -33,11 +33,11 @@ def create_app():
         name="Admin UI",
         template_mode='bootstrap4',
         url='/admin-ui',
-        index_view=SecureAdminIndexView(name=None,url='/admin-ui')
+        index_view=SecureAdminIndexView(name=None, url='/admin-ui')
     )
 
     admin_ui.add_view(SecureModelView(News, db.session, name='News', endpoint='admin_news'))
-    admin_ui.add_view(AdminReadOnlyView(AdminModel, db.session, name='Admins', endpoint='admins'))
+    admin_ui.add_view(AdminModelView(AdminModel, db.session, name='Admins', endpoint='admins'))
     admin_ui.add_view(SecureModelView(Product, db.session, name="Products", endpoint="admin_products"))
 
     @login_manager.user_loader
