@@ -1,0 +1,31 @@
+.root {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 20px 16px 20px 35px;
+
+  img {
+    width: 70px;
+    height: 70px;
+  }
+
+  a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #262626;
+    text-decoration: none;
+  }
+
+  button {
+    width: 220px;
+    height: 60px;
+    padding: 16.5px 9.5px;
+    background-color: transparent;
+    border: 1px solid #680c20;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #680c20;
+    cursor: pointer;
+  }
+}

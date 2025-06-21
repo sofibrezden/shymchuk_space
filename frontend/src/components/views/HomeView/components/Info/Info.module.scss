@@ -1,0 +1,45 @@
+.wrapper {
+  margin-top: 50px;
+  display: flex;
+
+  .infoBlock {
+    white-space: nowrap;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 145px;
+    padding: 60px 66px 60px 140px;
+  }
+
+  h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #262626;
+    line-height: 36px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 20px;
+    color: #262626;
+    line-height: 30px;
+
+    .workingDay {
+      font-weight: 600;
+    }
+
+    .ticketType {
+      font-style: italic;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 743px;
+  }
+}
