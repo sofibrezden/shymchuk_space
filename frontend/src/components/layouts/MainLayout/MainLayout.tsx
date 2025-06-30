@@ -5,7 +5,7 @@ import Footer from "./Footer/Footer";
 function MainLayout({ children }: PropsWithChildren) {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       {children}
       <Footer />
     </>

@@ -3,6 +3,7 @@
   align-items: center;
   gap: 60px;
   padding: 20px 16px 20px 35px;
+  position: relative;
 
   img {
     margin-right: auto;
@@ -10,24 +11,84 @@
     height: 70px;
   }
 
-  a {
-    font-size: 20px;
-    font-weight: 600;
-    color: #262626;
-    text-decoration: none;
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    a {
+      font-size: 20px;
+      font-weight: 600;
+      color: #262626;
+      text-decoration: none;
+    }
+
+    button {
+      line-height: 25px;
+      padding: 16.5px 9.5px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #680c20;
+      cursor: pointer;
+    }
   }
 
-  button {
-    line-height: 25px;
-    width: 220px;
-    height: 60px;
-    padding: 16.5px 9.5px;
-    background-color: transparent;
-    border: 1px solid #680c20;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #680c20;
+  .burger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
     cursor: pointer;
+    span {
+      height: 4px;
+      width: 25px;
+      background: black;
+      border-radius: 2px;
+    }
+  }
+
+  @media screen and (max-width: 1150px) {
+    .links {
+      gap: 30px;
+      a {
+        font-size: 16px;
+      }
+      button {
+        padding: 9.5px 5.5px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 860px) {
+    .links {
+      gap: 5px;
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+
+      a,
+      button {
+        margin-bottom: 15px;
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+      }
+    }
+
+    .open {
+      display: flex;
+    }
+
+    .burger {
+      display: flex;
+      margin-left: auto;
+    }
   }
 }
