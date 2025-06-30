@@ -36,7 +36,9 @@ function Info() {
           </div>
         </div>
       </div>
-      <img src={MapImg} alt="Map" />
+      <div className={styles.mapWrapper}>
+        <img src={MapImg} alt="Map" />
+      </div>
     </div>
   );
 }

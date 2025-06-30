@@ -1,4 +1,5 @@
 .wrapper {
+  height: 743px;
   margin-top: 50px;
   display: flex;
 
@@ -12,8 +13,9 @@
   .contentWrapper {
     display: flex;
     flex-direction: column;
-    gap: 145px;
     padding: 60px 66px 60px 140px;
+    justify-content: space-between;
+    height: 100%;
   }
 
   h4 {
@@ -38,8 +40,59 @@
     }
   }
 
+  .mapWrapper {
+    flex-grow: 1;
+  }
+
   img {
     width: 100%;
-    height: 743px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 992px) {
+    height: 450px;
+    margin-top: 25px;
+    .infoBlock {
+      width: 50%;
+    }
+
+    h4 {
+      font-size: 18px;
+      line-height: 100%;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 100%;
+    }
+
+    .contentWrapper {
+      padding-left: 120px;
+    }
+  }
+
+  @media screen and (max-width: 688px) {
+    height: 213px;
+
+    h4 {
+      font-size: 13px;
+      line-height: 100%;
+    }
+
+    p {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 100%;
+    }
+
+    .contentWrapper {
+      padding: 8px 20px 15px 35px;
+    }
+
+    .infoBlock {
+      width: 195px;
+    }
   }
 }

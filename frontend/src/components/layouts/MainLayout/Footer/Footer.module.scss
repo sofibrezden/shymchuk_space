@@ -1,0 +1,148 @@
+.root {
+  background-color: #f8f8f8;
+  padding: 17px 140px 32px 140px;
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .galleryName {
+    display: none;
+  }
+
+  h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 150%;
+    width: 178px;
+  }
+
+  h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #262626;
+    margin-bottom: 26px;
+    line-height: 150%;
+  }
+
+  p {
+    color: #262626;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .help {
+    font-size: 18px;
+    font-weight: 700;
+    color: #262626;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .facebookInfo,
+  .instagramInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .socialMediaName {
+      font-size: 18px;
+      font-weight: 700;
+      color: #262626;
+    }
+  }
+
+  .support {
+    justify-self: center;
+  }
+
+  .socialMedia {
+    justify-self: end;
+  }
+
+  .socialLinkContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  @media screen and (max-width: 992px) {
+    grid-template-columns: 1fr;
+
+    .support,
+    .socialMedia {
+      justify-self: left;
+    }
+
+    h4 {
+      margin: 25px 0px 0px 0px;
+      line-height: 100%;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .help {
+      font-size: 16px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .socialMedia {
+      span {
+        display: none;
+      }
+    }
+
+    .socialLinkContainer {
+      flex-direction: row;
+      margin-top: 10px;
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 688px) {
+    padding-left: 35px;
+    margin-top: 31px;
+
+    .galleryName {
+      display: flex;
+      gap: 4px;
+      margin: 4px 0px 0px -29px;
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    h4 {
+      font-size: 13px;
+      margin: 17px 0px 0px 0px;
+    }
+
+    p {
+      font-size: 10px;
+    }
+
+    .help {
+      font-size: 10px;
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}

@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import LeftArrowIcon from "../../../../../assets/icons/left_arrow.svg";
 import RightArrowIcon from "../../../../../assets/icons/right_arrow.svg";
 import { newsList } from "./constants";
+import Button from "../../../../ui/Button/Button";
 
 function NewsAndEvents() {
   return (
@@ -15,10 +16,10 @@ function NewsAndEvents() {
 
       {/* Кастомні кнопки */}
       <div className={styles.navigationButtons}>
-        <button className={styles.prev} id="shop-prev">
+        <button className={styles.prev} id="news-prev">
           <img src={LeftArrowIcon} alt="Left Arrow" />
         </button>
-        <button className={styles.next} id="shop-next">
+        <button className={styles.next} id="news-next">
           <img src={RightArrowIcon} alt="Right Arrow" />
         </button>
       </div>
@@ -27,13 +28,27 @@ function NewsAndEvents() {
         <Swiper
           modules={[Navigation, FreeMode]}
           className={styles.swiperContainer}
-          slidesPerView={3}
-          spaceBetween={30}
+          // slidesPerView={3}
+          // spaceBetween={30}
           freeMode={true}
           pagination={true}
           navigation={{
-            prevEl: "#shop-prev",
-            nextEl: "#shop-next",
+            prevEl: "#news-prev",
+            nextEl: "#news-next",
+          }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 30,
+            },
+            800: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1100: {
+              slidesPerView: 3,
+              spaceBetween: 15,
+            },
           }}
         >
           {newsList.map((item, index) => (
@@ -54,6 +69,9 @@ function NewsAndEvents() {
           ))}
         </Swiper>
       </div>
+      <Button className={styles.allEvents} variant="Outlined">
+        Всі події
+      </Button>
     </div>
   );
 }

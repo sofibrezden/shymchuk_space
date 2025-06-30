@@ -1,13 +1,23 @@
 import { ButtonHTMLAttributes } from "react";
 import styles from "./Button.module.scss";
 
+export type ButtonVariant = "Default" | "Outlined";
+interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: ButtonVariant;
+}
+
 function Button({
   children,
+  variant = "Default",
   className = "",
   ...props
-}: ButtonHTMLAttributes<HTMLButtonElement>) {
+}: IButtonProps) {
+  const variantClassname = { Default: "", Outlined: styles.outlinedBtn };
   return (
-    <button {...props} className={`${styles.detailedBtn} ${className}`}>
+    <button
+      {...props}
+      className={`${styles.detailedBtn} ${variantClassname[variant]} ${className}`}
+    >
       {children}
     </button>
   );
