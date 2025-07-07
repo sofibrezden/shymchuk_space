@@ -1,0 +1,40 @@
+.breadcrumb {
+  margin-left: 91px;
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: #262626;
+
+  a {
+    color: #1a1a1a;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .current {
+    color: #262626;
+  }
+
+  @media (max-width: 1024px) {
+    margin-left: 40px;
+    font-size: 13px;
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 40px;
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 480px) {
+    margin-left: 20px;
+    font-size: 11px;
+    gap: 4px;
+  }
+}
