@@ -1,0 +1,174 @@
+.sectionRoot {
+  padding: 48px 0;
+  position: relative;
+}
+
+.contentInner {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.contentText {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.sectionTitle {
+  font-size: 35px;
+  font-weight: 600;
+  margin-left: 91px;
+  margin-bottom: 32px;
+  font-family: 'Poppins', sans-serif;
+  color: #262626;
+}
+
+.timeline {
+  padding-left: 91px;
+}
+
+.timelineOpposite {
+  flex: 0.05;
+  margin-top: -15px;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  text-align: right;
+  font-weight: 600;
+  color: #000000;
+}
+
+.timelineContent {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 30px;
+  border-radius: 12px;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 1150px;
+  margin-bottom: 15px;
+}
+
+.textBlock {
+  flex: 1;
+}
+
+.contentTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 12px 0;
+  position: relative;
+  top: -25px;
+}
+
+.contentText {
+  font-size: 1.1rem;
+  max-width: 750px;
+  text-align: justify;
+  color: #606060;
+  margin-bottom: 16px;
+}
+
+.inlineNote {
+  font-weight: normal;
+  color: #606060;
+}
+
+
+.timelineImage {
+  width: 250px;
+  height: auto;
+  margin-left: 100px;
+  object-fit: contain;
+}
+
+.diamond {
+  width: 24px;
+  height: 24px;
+  background-color: #680C20;
+  transform: rotate(45deg);
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .sectionTitle {
+    font-size: 28px;
+    margin-left: 40px;
+  }
+
+  .timeline {
+    padding-left: 40px;
+  }
+
+  .timelineOpposite {
+    font-size: 20px;
+  }
+
+  .timelineContent {
+    flex-direction: column;
+    padding: 10px 20px;
+    max-width: 100%;
+  }
+
+  .timelineImage {
+    width: 200px;
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+  .contentTitle {
+    font-size: 1.3rem;
+    top: -15px;
+  }
+
+  .contentText {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 24px;
+    margin-left: 20px;
+    text-align: center;
+  }
+
+  .timeline {
+    padding-left: 0;
+  }
+
+  .timelineOpposite {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .timelineContent {
+    flex-direction: column;
+    padding: 10px 16px;
+  }
+
+  .timelineImage {
+    width: 100%;
+    max-width: 300px;
+    margin-left: 0;
+    margin-top: 12px;
+    align-self: center;
+  }
+
+  .contentTitle {
+    font-size: 1.2rem;
+    top: -10px;
+  }
+
+  .contentText {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+
+  .diamond {
+    width: 18px;
+    height: 18px;
+  }
+}
