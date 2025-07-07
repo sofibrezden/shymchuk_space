@@ -124,9 +124,17 @@ button {
     border-radius: 5px;
     padding: 5px;
     width: 130px;
-    height: 30px;
+    height: 40px;
     cursor: pointer;
     text-align: center;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
 }
@@ -149,7 +157,7 @@ button {
   }
 
   .text {
-    margin-top:25px;
+    margin-top: 25px;
     font-size: 16px;
   }
 
@@ -160,13 +168,22 @@ button {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    text-decoration: none;
 
     border: none;
     border-radius: 5px;
     padding: 10px;
     width: 120px;
-    height: 30px;
+    height: 40px;
     cursor: pointer;
     text-align: center;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
