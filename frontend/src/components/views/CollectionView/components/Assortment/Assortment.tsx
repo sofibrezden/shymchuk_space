@@ -27,7 +27,7 @@ function Assortment({
   return (
     <div className={styles.wrapper}>
       <h5>
-        <a href="https://localhost:3000">Головна</a>
+        <a href="/">Головна</a>
         {">"} Колекція
       </h5>
 
