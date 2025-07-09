@@ -26,7 +26,10 @@ function Assortment({
 
   return (
     <div className={styles.wrapper}>
-      <h5><a href="https://localhost:3000">Головна</a>{">"} Колекція</h5>
+      <h5>
+        <a href="https://localhost:3000">Головна</a>
+        {">"} Колекція
+      </h5>
 
       <div className={styles.search}>
         <button
@@ -38,12 +41,12 @@ function Assortment({
 
         <input type="text" placeholder="Шукати" />
         <img src={SearchImg} alt="Search" className={styles.searchImg} />
-        {/*<button*/}
-        {/*  className={styles.mapButton}*/}
-        {/*  onClick={() => setIsMapShown(!isMapShown)}*/}
-        {/*>*/}
-        {/*  <img src={MapImg} className={styles.map} alt="Map" />*/}
-        {/*</button>*/}
+        <button
+          className={styles.mapButton}
+          onClick={() => setIsMapShown(!isMapShown)}
+        >
+          <img src={MapImg} className={styles.map} alt="Map" />
+        </button>
       </div>
 
       {isMapShown == true ? (
