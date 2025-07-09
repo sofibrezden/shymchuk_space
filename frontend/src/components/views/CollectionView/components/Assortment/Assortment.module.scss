@@ -6,11 +6,15 @@
   }
 
   h5 {
-    font-size: 20px;
+    margin-top: 20px;
+    font-size: 15px;
     font-weight: 500;
     color: #262626;
   }
-
+  a{
+    text-decoration: none;
+    color: #000000;
+  }
   .filterToggle {
     display: none;
     background: transparent;
