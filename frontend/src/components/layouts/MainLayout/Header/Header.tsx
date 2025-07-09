@@ -12,7 +12,7 @@ function Header() {
 
       <div className={`${styles.links} ${isMenuOpen ? styles.open : ""}`}>
         <a href="#">Про музей</a>
-        <a href="#">Колекція</a>
+        <a href="/collection">Колекція</a>
         <a href="#">Крамниця</a>
         <a href="#">Події</a>
         <a href="#">Контакти</a>
