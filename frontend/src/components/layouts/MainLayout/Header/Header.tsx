@@ -11,7 +11,7 @@ function Header() {
       <img src={Logo} alt="Logo" />
 
       <div className={`${styles.links} ${isMenuOpen ? styles.open : ""}`}>
-        <a href="#">Про музей</a>
+        <a href="/about-museum">Про музей</a>
         <a href="/collection">Колекція</a>
         <a href="#">Крамниця</a>
         <a href="#">Події</a>
