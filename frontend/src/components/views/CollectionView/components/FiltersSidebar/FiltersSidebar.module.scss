@@ -1,0 +1,190 @@
+/* FiltersSidebar.module.scss */
+.wrapper {
+  margin-top: 60px;
+
+  // Сховати на мобільному, показати по кліку
+  &.open {
+    .section {
+      display: block;
+    }
+  }
+
+  .filterToggle {
+    display: none;
+    background: transparent;
+    border: 1px solid #680c20;
+    padding: 6px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .filtersBlock {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+
+    h3 {
+      font-size: 30px;
+      font-weight: 600;
+      color: #262626;
+      line-height: 140%;
+    }
+  }
+
+  .section {
+    // Спочатку показувати як зазвичай
+    display: block;
+    position: relative; // для абсолютної кнопки всередині
+
+    .topLevel {
+      color: #262626;
+      font-size: 25px;
+      font-weight: 600;
+      display: flex;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    details {
+      &[open] > summary > img.arrowIcon {
+        transform: rotate(180deg);
+      }
+
+      summary::-webkit-details-marker,
+      summary::marker {
+        display: none;
+      }
+    }
+  }
+
+  .subsection {
+    h4 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #262626;
+      margin: 10px 0 0 43px;
+    }
+
+    & > details > summary {
+      margin-left: 19px;
+    }
+
+    details {
+      &[open] > summary > img.arrowIcon {
+        transform: rotate(180deg);
+      }
+
+      summary::-webkit-details-marker,
+      summary::marker {
+        display: none;
+      }
+
+      summary {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+      }
+    }
+
+    summary,
+    span,
+    h6,
+    ul > li {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    h6 {
+      margin: 10px 0 0 58px;
+    }
+
+    ul {
+      margin-top: 5px;
+      list-style: none;
+      margin-left: 65px;
+    }
+  }
+
+  .closeBtn {
+    display: none;
+  }
+
+  @media screen and (max-width: 992px) {
+    .filtersBlock {
+      display: none;
+    }
+
+    .filterToggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1001;
+    }
+
+    .section {
+      display: none;
+      margin-top: 20px;
+      padding-top: 0;
+    }
+
+    .backdrop {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+    &.open {
+      .backdrop {
+        display: block;
+      }
+
+      .section {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%;
+        max-width: 300px;
+        height: 100%;
+        background: #fff;
+        z-index: 1000;
+        overflow-y: auto;
+        margin-top: 0;
+        padding: 20px;
+        padding-top: 50px;
+
+        .closeBtn {
+          display: inline-flex;
+          position: absolute;
+          top: 16px;
+          right: 16px;
+          z-index: 1002;
+          background: transparent;
+          border: none;
+          padding: 6px;
+          border-radius: 6px;
+
+          img {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+}
