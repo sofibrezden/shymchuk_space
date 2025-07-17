@@ -15,18 +15,14 @@ export default function FiltersSidebar({
 }) {
   return (
     <div className={`${styles.wrapper} ${isOpen ? styles.open : ""}`}>
-      {/* Напівпрозорий фон, який закриває меню */}
       <div className={styles.backdrop} onClick={() => isOpenHandler(false)} />
 
-      {/* Заголовок фільтрів (десктоп) */}
       <div className={styles.filtersBlock}>
         <img src={FilterImg} alt="Filters" />
         <h3>Фільтри</h3>
       </div>
 
-      {/* Саме меню */}
       <div className={styles.section}>
-        {/* Кнопка закриття (тепер всередині меню) */}
         <button
           className={styles.closeBtn}
           onClick={() => isOpenHandler(false)}

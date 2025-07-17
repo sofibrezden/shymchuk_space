@@ -11,20 +11,22 @@
     font-weight: 500;
     color: #262626;
   }
-  a{
+  a {
     text-decoration: none;
     color: #000000;
   }
   .filterToggle {
     display: none;
     background: transparent;
-    border: 1px solid #680c20;
+    border: 2px solid #000000;
     padding: 6px;
-    border-radius: 6px;
+    border-radius: 10px;
+    height: 35px;
+    width: 35px;
 
     img {
-      width: 25px;
-      height: 25px;
+      width: 18px;
+      height: 18px;
     }
   }
 
@@ -180,13 +182,12 @@
 
   .mapContainer {
     max-width: 1050px;
-    height: 500px;
 
     img {
       width: 100%;
-      height: 100%;
+      height: auto;
       margin-top: 20px;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 
@@ -199,6 +200,9 @@
     }
 
     .search {
+      input {
+        width: 100%;
+      }
       .searchImg {
         left: 65px;
       }
@@ -207,6 +211,7 @@
 
   @media screen and (max-width: 688px) {
     .galleryWrapper {
+      column-gap: 5px;
       .cardWrapper {
         width: 170px;
         height: 262px;
@@ -217,6 +222,31 @@
 
         h4 {
           font-size: 14px;
+        }
+      }
+    }
+    .search {
+      input {
+        padding-left: 30px;
+      }
+
+      .searchImg {
+        width: 20px;
+        height: 20px;
+      }
+
+      .mapButton {
+        width: 38px;
+        height: 35px;
+        z-index: 5;
+        padding: 4px 0px;
+        margin-left: 11px;
+        border: 1px solid #d9d9d9;
+
+        .map {
+          width: 38px;
+          height: 28px;
+          object-fit: contain;
         }
       }
     }
