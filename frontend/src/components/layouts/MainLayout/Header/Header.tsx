@@ -8,8 +8,8 @@ function Header() {
 
   return (
     <div className={styles.root}>
-      <img src={Logo} alt="Logo" />
-
+      <img src={Logo} alt="Logo" onClick={() => window.location.href = '/'}
+           style={{ cursor: 'pointer' }}/>
       <div className={`${styles.links} ${isMenuOpen ? styles.open : ""}`}>
         <a href="/about-museum">Про музей</a>
         <a href="/collection">Колекція</a>
