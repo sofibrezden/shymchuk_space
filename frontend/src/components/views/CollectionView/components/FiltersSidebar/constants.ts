@@ -1,18 +1,26 @@
 export const list = [
-  {
-    title: "Колекція",
-    subCategory: [
-      {
-        subCategoryName: "Гуцульщина",
-        clothesCounter: 462,
-        accessoriesCounter: 122,
-        clothesList: ["Сорочки", "Сукні", "Кептарі", "Спідниці"],
-        accessoriesList: [],
-      },
-      { subCategoryName: "Буковина" },
-      { subCategoryName: "Поділля" },
-      { subCategoryName: "Полісся" },
-    ],
-  },
-  { title: "Цікаве" },
+    {
+        title: "Колекція",
+        subCategory: [
+            {
+                subCategoryName: "Гуцульщина",
+                clothesCounter: 462,
+                accessoriesCounter: 122,
+                clothesList: ["Сорочки", "Сукні", "Кептарі", "Спідниці"],
+                accessoriesList: [],
+            },
+            {subCategoryName: "Буковина"},
+            {subCategoryName: "Поділля"},
+            {subCategoryName: "Полісся"},
+            {subCategoryName: "Бойківщина"},
+            {subCategoryName: "Причорномор'я"},
+            {subCategoryName: "Приазов'я"},
+            {subCategoryName: "Подніпров'я"},
+            {subCategoryName: "Покуття"},
+            {subCategoryName: "Одещина"},
+            {subCategoryName: "Опілля"},
+            {subCategoryName: "Закарпаття"},
+        ],
+    },
+    {title: "Цікаве"},
 ];
