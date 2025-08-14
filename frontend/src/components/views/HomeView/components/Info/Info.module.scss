@@ -18,6 +18,25 @@
     height: 100%;
   }
 
+  .noteWrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .note {
+    font-size: 13px;
+    color: #262626;
+    font-style: italic;
+    line-height: 20px;
+    width: 80%;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
   h4 {
     font-size: 24px;
     font-weight: 600;
@@ -71,10 +90,20 @@
     .contentWrapper {
       padding-left: 120px;
     }
+
+    .note {
+      font-size: 7px;
+      line-height: 7px;
+    }
+
+    .extraOptions {
+      font-size: 7px;
+      font-weight: 500;
+    }
   }
 
   @media screen and (max-width: 688px) {
-    height: 213px;
+    height: 280px;
 
     h4 {
       font-size: 13px;
