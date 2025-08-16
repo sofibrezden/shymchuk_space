@@ -16,7 +16,7 @@ function App() {
             <Route path="/about-museum" element={<HistoryView />} />
             <Route path="/collection" element={<CollectionView />} />
             <Route
-              path="/region-details/:regionKey"
+              path=":regionKey"
               element={<RegionDetailsView />}
             />
           </Routes>
