@@ -24,3 +24,10 @@ export const list = [
     },
     {title: "Цікаве"},
 ];
+export const regionKeyMap: Record<string, string> = {
+  "Волинь": "volyn",
+  "Буковина": "bukovyna",
+  "Закарпаття": "zakarpattia",
+  "Покуття": "pokuttia",
+  "Гуцульщина": "hutsulshchyna",
+};

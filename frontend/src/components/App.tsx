@@ -4,6 +4,7 @@ import HomeView from "./views/HomeView/HomeView";
 import HistoryView from "./views/HistoryView/HistoryView";
 import { StyledEngineProvider } from "@mui/material/styles";
 import CollectionView from "./views/CollectionView/CollectionView";
+import RegionDetailsView from "./views/RegionDetailsView/RegionDetailsView";
 
 function App() {
   return (
@@ -14,6 +15,10 @@ function App() {
             <Route path="/" element={<HomeView />} />
             <Route path="/about-museum" element={<HistoryView />} />
             <Route path="/collection" element={<CollectionView />} />
+            <Route
+              path=":regionKey"
+              element={<RegionDetailsView />}
+            />
           </Routes>
         </MainLayout>
       </Router>

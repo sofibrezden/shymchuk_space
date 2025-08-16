@@ -1,8 +1,6 @@
-/* FiltersSidebar.module.scss */
 .wrapper {
   margin-top: 60px;
 
-  // Сховати на мобільному, показати по кліку
   &.open {
     .section {
       display: block;
@@ -42,9 +40,8 @@
   }
 
   .section {
-    // Спочатку показувати як зазвичай
     display: block;
-    position: relative; // для абсолютної кнопки всередині
+    position: relative;
 
     .topLevel {
       color: #262626;
@@ -90,9 +87,27 @@
       }
 
       summary {
-        display: flex;
-        align-items: center;
-        gap: 7px;
+        a {
+          color: inherit;
+          text-decoration: none;
+          font-weight: 500;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #680c20;
+            transition: width 0.3s ease;
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
+        }
       }
     }
 
@@ -187,4 +202,8 @@
       }
     }
   }
+}
+
+.wrapper details > summary {
+  list-style: none;
 }

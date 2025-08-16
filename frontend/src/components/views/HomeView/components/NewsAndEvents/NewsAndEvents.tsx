@@ -14,7 +14,6 @@ function NewsAndEvents() {
     <div className={styles.wrapper}>
       <h3>Останні новини та події</h3>
 
-      {/* Кастомні кнопки */}
       <div className={styles.navigationButtons}>
         <button className={styles.prev} id="news-prev">
           <img src={LeftArrowIcon} alt="Left Arrow" />
