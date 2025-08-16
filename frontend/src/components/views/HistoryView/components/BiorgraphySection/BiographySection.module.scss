@@ -55,13 +55,10 @@
     display: none;
   }
 }
-
-
 @media (max-width: 1024px) {
   .wrapper {
     margin: 40px;
   }
-
   .wrapper .content {
     flex-direction: column;
     align-items: center;

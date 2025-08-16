@@ -49,9 +49,10 @@
     gap: 3px;
   }
 
-  .facebookInfo,
-  .instagramInfo {
+  .facebookInfo a,
+  .instagramInfo a {
     display: flex;
+    text-decoration: none;
     align-items: center;
     gap: 10px;
 
@@ -61,7 +62,6 @@
       color: #262626;
     }
   }
-
   .support {
     justify-self: center;
   }

@@ -7,7 +7,7 @@ function HeroSection() {
     <div className={styles.wrapper}>
       <div className={styles.textContainer}>
         <h1>Етно-галерея Роксоляни Шимчук</h1>
-        <p>Місце, де живе ексклюзивний вишитий одяг</p>
+        <p>Місце де живе українська краса!</p>
         <Button>Детальніше</Button>
       </div>
       <div className={styles.imageContainer}>

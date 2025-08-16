@@ -9,10 +9,10 @@ function Info() {
           <div className={styles.schedule}>
             <h4>Графік роботи</h4>
             <p>
-              <span className={styles.workingDay}>Пн: </span>вихідний
+              <span className={styles.workingDay}>Пн-Сб: </span>10:00 - 20:00
             </p>
             <p>
-              <span className={styles.workingDay}>Вт-Нд: </span>10:00 - 18:00
+              <span className={styles.workingDay}>Нд: </span>12:00 - 20:00
             </p>
           </div>
 
@@ -25,13 +25,23 @@ function Info() {
           <div className={styles.tickets}>
             <h4>Квитки</h4>
             <p>
-              <span className={styles.ticketType}>Повний</span> - 100грн
+              <span className={styles.ticketType}>Повний</span> - 150грн
             </p>
             <p>
-              <span className={styles.ticketType}>Пільговий</span> - 50грн
+              <span className={styles.ticketType}>Пільговий</span> - 75грн
+            </p>
+            <div className={styles.noteWrapper}>
+  <p className={styles.note}>
+    *для учасників бойових дій, членів їх сімей,
+    осіб з пенсійними посвідченнями, та для дітей від 3 до 12 років
+  </p>
+</div>
+
+            <p>
+              <span className={styles.extraOptions}>Для дітей до 3 років - вхід безкоштовний</span>
             </p>
             <p>
-              <span className={styles.ticketType}>Дитячий</span> - 30грн
+              <span className={styles.extraOptions}>Авторські екскурсії - за домовленістю</span>
             </p>
           </div>
         </div>

@@ -14,10 +14,13 @@ function Footer() {
             <div className={styles.contacts}>
                 <h4>Контакти</h4>
                 <p className={styles.phone}>
-                    <span>Тел.: </span>+380965583204
+                    <span>Крамниця: </span>+380965583204
+                </p>
+                <p className={styles.phone}>
+                    <span>Музей: </span>+380960265621
                 </p>
                 <p>
-                    <span>Email: </span>gallery@example.com
+                    <span>Email: </span>shymchuk.gallery@gmail.com
                 </p>
             </div>
 
@@ -37,13 +40,17 @@ function Footer() {
                 <h4>Будьте з нами</h4>
                 <div className={styles.socialLinkContainer}>
                     <div className={styles.facebookInfo}>
+                        <a href="https://www.facebook.com/shymchuk.com.ua/?locale=uk_UA">
                         <img src={FacebookIcon} alt="Facebook"/>
                         <span className={styles.socialMediaName}>Facebook</span>
+                        </a>
                     </div>
                     <div className={styles.instagramInfo}>
-                        <img src={InstagramIcon} alt="Instagram"/>
-                        <span className={styles.socialMediaName}>Instagram</span>
-                    </div>
+                          <a href="https://www.instagram.com/roksolyana.shymchuk/">
+                            <img src={InstagramIcon} alt="Instagram"/>
+                            <span className={styles.socialMediaName}>Instagram</span>
+                          </a>
+                        </div>
                 </div>
             </div>
         </div>
