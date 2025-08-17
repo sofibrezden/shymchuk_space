@@ -182,31 +182,9 @@ h1 {
     }
   }
 }
-
 @media (max-width: 680px) {
   .card {
     grid-template-columns: 1fr;
-  }
-  .info {
-    border-left: none;
-    border-right: none;
-  }
-  .mapWrap {
-    min-height: 240px;
-
-    iframe {
-      min-height: 240px;
-    }
-  }
-  h1 {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 680px) {
-  .card {
     background: #F8F8F8;
     display: flex;
     flex-direction: column;
@@ -218,9 +196,23 @@ h1 {
 
   .info {
     order: 1;
+    border-left: none;
+    border-right: none;
   }
 
   .mapWrap {
     order: 2;
+    min-height: 240px;
+
+    iframe {
+      min-height: 240px;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 27px;
   }
 }
