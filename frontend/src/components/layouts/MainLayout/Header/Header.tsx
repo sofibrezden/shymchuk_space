@@ -16,7 +16,7 @@ function Header() {
         <a href="#">Історія успіху</a>
         <a href="#">Родина</a>
         <a href="#">Новини</a>
-        <a href="#">Контакти</a>
+        <a href="/contacts">Контакти</a>
         <Button variant="Outlined">Підтримка донатом</Button>
       </div>
 
