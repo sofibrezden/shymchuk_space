@@ -12,14 +12,13 @@ h1 {
 }
 
 .card {
-  background: #F8F8F8;
-  border-radius: 8px;
+  background: #ffffff;
   overflow: hidden;
   display: grid;
+  border-radius:8px;
   grid-template-columns: 1.1fr 0.9fr 1.2fr;
   gap: 0;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
-  border: 1px solid #eee;
 }
 
 .form {
@@ -208,6 +207,7 @@ h1 {
 
 @media (max-width: 680px) {
   .card {
+    background: #F8F8F8;
     display: flex;
     flex-direction: column;
   }
