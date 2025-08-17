@@ -19,7 +19,12 @@ const JoinSupportSection: React.FC = () => {
         </div>
         <div className={styles.cardRight}>
           <h2>Ставай партнером етно-галереї Роксоляни Шимчук</h2>
-          <Button className={styles.cta} onClick={() => {}}>
+          <Button
+            className={styles.cta}
+            onClick={() => {
+              window.location.href = "mailto:shymchuk.gallery@gmail.com";
+            }}
+          >
             Поспілкуймося<br />щодо партнерства
           </Button>
         </div>
