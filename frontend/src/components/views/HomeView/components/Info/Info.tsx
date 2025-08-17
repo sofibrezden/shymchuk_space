@@ -1,5 +1,5 @@
 import styles from "./Info.module.scss";
-import MapImg from "../../../../../assets/images/home_page/map.png";
+import React from "react";
 
 function Info() {
     return (
@@ -46,9 +46,14 @@ function Info() {
                     </div>
                 </div>
             </div>
-            <div className={styles.mapWrapper}>
-                <img src={MapImg} alt="Map"/>
-            </div>
+            <div className={styles.mapWrapper} aria-label="Карта з адресою">
+                    <iframe
+                        title="Map"
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps?q=вул.+Миколи+Коперника,+17,+Львів&output=embed"
+                    />
+                </div>
         </div>
     );
 }
