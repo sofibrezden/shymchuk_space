@@ -1,0 +1,147 @@
+.section {
+  padding: 0 0 20px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 1fr;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+
+  @media (max-width: 768px) {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 0 0;
+  }
+}
+
+.cardLeft,
+.cardRight,
+.formWrap {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardLeft {
+  order: 1;
+}
+
+.imageWrap {
+  order: 2;
+  overflow: hidden;
+  height: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.cardRight {
+  order: 3;
+}
+
+.formWrap {
+  order: 4;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    input {
+      padding: 8px;
+      border-radius: 6px;
+    }
+
+    button {
+      background: #7d1428;
+      color: #fff;
+      padding: 10px 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background: #931834;
+      }
+    }
+  }
+}
+
+.cardLeft h2,
+.cardRight h2 {
+  margin: 0 0 20px;
+  font-weight: 800;
+  color: #262626;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+  font-size: 22px;
+}
+
+.cta {
+  font-size: 14px;
+  padding: 6px 18px;
+  line-height: 1.3;
+  border-radius: 8px;
+  font-weight: 600;
+  white-space: normal;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardLeft {
+    padding: 20px 15px 5px 24px;
+  }
+
+  .cardRight {
+    padding: 5px 15px 20px 24px;
+  }
+
+  .cardLeft h2 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 20px;
+  }
+
+  .cardRight h2 {
+    margin: 0 0 14px 0;
+    font-weight: 400;
+    font-family: Poppins;
+    font-size: 20px;
+  }
+
+  .imageWrap {
+    display: none;
+    height: auto;
+
+    img {
+      height: auto;
+    }
+  }
+
+  .cta {
+    font-size: 11px;
+    padding: 5px 9px;
+    line-height: 1.3;
+    border-radius: 8px;
+    font-weight: 600;
+    white-space: normal;
+    text-align: center;
+  }
+}

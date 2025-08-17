@@ -1,0 +1,33 @@
+.breadcrumb {
+  margin: 0 0 35px;
+  display: flex;
+  justify-content: flex-start;
+
+  a {
+    color: #1a1a1a;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .current {
+    color: #262626;
+  }
+
+  @media (max-width: 1024px) {
+    display:none;
+    font-size: 13px;
+  }
+
+  @media (max-width: 768px) {
+    display:none;
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 480px) {
+    display:none;
+  }
+}

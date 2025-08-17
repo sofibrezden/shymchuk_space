@@ -1,0 +1,35 @@
+.breadcrumb {
+  margin: 0 0 35px;
+  display: flex;
+  justify-content: flex-start;
+}
+.breadcrumb a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+.breadcrumb .current {
+  color: #262626;
+}
+@media (max-width: 1024px) {
+  .breadcrumb {
+    display: none;
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .breadcrumb {
+    display: none;
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 480px) {
+  .breadcrumb {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=BreadcrumbSection.module.css.map */
